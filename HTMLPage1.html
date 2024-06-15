@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <link rel="stylesheet" href="meadiaqueries.css" />
+</head>
+<body>
+    <nav id="dekstop-nav">
+        <div class="logo">Chandima</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#Progress">Progress</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Chandima</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="John Doe profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Chandima Wijerathna</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                        onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" /*onclick="location.href='./#contact'"*/>
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png"
+                     alt="My LinkedIn profile"
+                     class="icon"
+                     onclick="location.href='https://linkedin.com/'" />
+                <img src="./assets/github.png"
+                     alt="My Github profile"
+                     class="icon"
+                     onclick="location.href='https://github.com/Chandima0406'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpg"
+                     alt="Profile picture"
+                     class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png"
+                             alt="Experience icon"
+                             class="icon" />
+                        <h3>Experience</h3>
+                        <p>1+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png"
+                             alt="Education icon"
+                             class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Sc. Computing and Information Systems</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        With one year at Cisco, I collaborated with UX/UI designers
+                        to craft responsive interfaces using HTML, CSS, and JavaScript. Managing
+                        code for multiple projects, I ensured high performance and seamless user
+                        experiences. Proficient in Git, I integrated front-end code with server-side
+                        logic using RESTful APIs and conducted code reviews within an Agile framework.
+                        My internship at Oracle involved contributing to the creation of
+                        responsive interfaces. Armed with a Bachelor's Degree in Computing and information systems,
+                        I specialize in frameworks like React, Angular, and Vue.js. My GitHub profile
+                        displays a portfolio of projects, showcasing my expertise in delivering innovative
+                        and user-centric web solutions. Excited to bring these skills to contribute to dynamic
+                        teams and future projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                 alt="Experience icon"
+                                 class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                 alt="Experience icon"
+                                 class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                 alt="Experience icon"
+                                 class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png"
+                                 alt="Experience icon"
+                                 class="icon" />
+                            <div>
+                                <h3>wordpress</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="Progress">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skill Progress</h1>
+        <div class="skill_list">
+            <div class="skill_box">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle id="circle" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="article-container2">
+                    <article>
+                        <img src="./assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon" />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="skill_box">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number1">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle id="circle1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="article-container2">
+                    <article>
+                        <img src="./assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon" />
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="skill_box">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number2">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle id="circle2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="article-container2">
+                    <article>
+                        <img src="./assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon" />
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="skill_box">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="0%" stop-color="#e91e63" />
+                                <stop offset="100%" stop-color="#673ab7" />
+                            </linearGradient>
+                        </defs>
+                        <circle id="circle3" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="article-container2">
+                    <article>
+                        <img src="./assets/checkmark.png"
+                             alt="Experience icon"
+                             class="icon" />
+                        <div>
+                            <h3>wordpress</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="article-container2">
+            <!--<article>
+                <img src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon" />
+                <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>-->
+            <!--<article>
+                <img src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon" />
+                <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>-->
+            <!--<article>
+                <img src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon" />
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>Basic</p>
+                </div>
+            </article>-->
+            <!--<article>
+                <img src="./assets/checkmark.png"
+                     alt="Experience icon"
+                     class="icon" />
+                <div>
+                    <h3>wordpress</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>-->
+
+        </div>
+
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png"
+                             alt="Project 1"
+                             class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Chandima0406/Whether-App/tree/5fb53cd9b8eb04220d6886f3bf44b9cf6d26e751/Whether%20App'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Chandima0406/Whether-App/tree/5fb53cd9b8eb04220d6886f3bf44b9cf6d26e751/Whether%20App'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png"
+                             alt="Project 2"
+                             class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Chandima0406/To-Do-List/tree/a67612f822268dd26095fb31d8ca595cf7e43463/To-Do%20List'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Chandima0406/To-Do-List/tree/a67612f822268dd26095fb31d8ca595cf7e43463/To-Do%20List'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png"
+                             alt="Project 3"
+                             class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Chandima0406/Quiz-App.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/Chandima0406/Quiz-App.git'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-4.png"
+                             alt="Project 1"
+                             class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Four</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-5.png"
+                             alt="Project 2"
+                             class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Five</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/AnjanaInda01/TourismGuide_System.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/AnjanaInda01/TourismGuide_System.git'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png"
+                             alt="Project 3"
+                             class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Six</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:examplemail@gmail.com">Chandima0406sajith@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#Progress">Progress</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2023 Chandima. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+    <script>
+        let number = document.getElementById("number");
+        let counter = 0;
+        setInterval(() => {
+            if (counter == 98) {
+                clearInterval();
+            } else {
+                counter += 1;
+                number.innerHTML = counter + "%";
+            }
+
+
+        }, 30);
+
+        let number1 = document.getElementById("number1");
+        let counter1 = 0;
+        setInterval(() => {
+            if (counter1 == 97) {
+                clearInterval();
+            } else {
+                counter1 += 1;
+                number1.innerHTML = counter1 + "%";
+            }
+
+
+        }, 30);
+
+        let number2 = document.getElementById("number2");
+        let counter2 = 0;
+        setInterval(() => {
+            if (counter2 == 95) {
+                clearInterval();
+            } else {
+                counter2 += 1;
+                number2.innerHTML = counter2 + "%";
+            }
+
+
+        }, 30);
+
+        let number3 = document.getElementById("number3");
+        let counter3 = 0;
+        setInterval(() => {
+            if (counter3 == 98) {
+                clearInterval();
+            } else {
+                counter3 += 1;
+                number3.innerHTML = counter3 + "%";
+            }
+
+
+        }, 30);
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
